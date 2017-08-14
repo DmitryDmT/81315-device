@@ -2,11 +2,180 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Главная «Device»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <h1 class="logo">DEVICE</h1>
+      <section class="search-column">
+        <div class="search-input">
+          <button type="button"></button>
+          <input type="text" placeholder="Поиск по сайту">
+        </div>
+        <div class="search-catalog">
+          <button class="search-catalog-btn" type="button">Каталог товаров</button>
+          <ul class="search-catalog-list visually-hidden">
+            <li class=""><a href="#">1</a></li>
+            <li class=""><a href="#">2</a></li>
+            <li class=""><a href="#">3</a></li>
+            <li class=""><a href="#">4</a></li>
+            <li class=""><a href="#">5</a></li>
+            <li class=""><a href="#">6</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="user-nav-column">
+        <div class="user-block">
+          <a class="enter" href="#">Войти</a>
+          <a class="compare" href="#">Сравнить</a>
+          <a class="cart" href="#">Корзина</a>
+        </div>
+        <nav class="nav-block">
+          <a class="deliver" href="#">Доставка</a>
+          <a class="guarantee" href="#">Гарантия</a>
+          <a class="contacts" href="#">Контакты</a>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="container">
+        <section class="slider">
+          <div class="slider-img">
+            <img src="#" alt="Палка для селфи">
+          </div>
+          <div class="slider-info">
+            <div class="slider-design"></div>
+            <b class="slider-head">Делай селфи, как Бен Стиллер!</b>
+            <p class="slider-text"></p>
+            <a  class="btn" href="#">Подробнее</a>
+            <table class="slider-table-info">
+              <tr class="row-1">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="row-2">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="items-list">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="#" alt="Виртуальная реальность">
+                <h3>Виртуальная реальность</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Моноподы для селфи">
+                <h3>Моноподы для селфи</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Экшн-камеры">
+                <h3>Экшн-камеры</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Фитнес-браслеты">
+                <h3>Фитнес-браслеты</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Умные часы">
+                <h3>Умные часы</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Квадрокоптеры">
+                <h3>Квадрокоптеры</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="opportunity-slider">
+        <div class="container">
+          <div class="opportunity-head-column">
+            <button type="button">Доставка</button>
+            <button type="button">Гарантия</button>
+            <button type="button">Кредит</button>
+          </div>
+          <div class="opportunity-info-column">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <article class="friends-block">
+          <a href="#"><img src="#" alt="DJI"></a>
+          <a href="#"><img src="#" alt="SpGadgets"></a>
+          <a href="#"><img src="#" alt="GoPro"></a>
+          <a href="#"><img src="#" alt="Vive"></a>
+        </article>
+        <section class="company-block">
+          <div class="about-us-column">
+            <h2>О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.<br><br>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="trade-companies-list">
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="btn" href="#">Подробнее о нас</a>
+          </div>
+          <div class="contacts-column">
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <div class="map"></div>
+            <a class="btn" href="#">Напишите нам</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="user-nav-line">
+          <h1 class="logo">DEVICE</h1>
+          <ul class="user-block">
+            <li><a class="enter" href="#">Войти</a></li>
+            <li><a class="compare" href="#">Сравнить</a></li>
+            <li><a class="cart" href="#">Корзина</a></li>
+          </ul>
+        </section>
+        <section class="device-opportunities-line">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <nav>
+            <a class="delivery" href="#">Доставка</a>
+            <a class="guarantee" href="#">Гарантия</a>
+            <a class="contacts" href="#">Контакты</a>
+          </nav>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </section>
+        <section class="social-line">
+          <div class="decoration"></div>
+          <section class="social-block">
+            <a class="social-f" href="#"></a>
+            <a class="social-inst" href="#"></a>
+            <a class="social-tw" href="#"></a>
+          </section>
+          <div class="html-academy">
+            <a class="social-html" href="#"></a>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
