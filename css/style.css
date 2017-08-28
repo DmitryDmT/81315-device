@@ -31,12 +31,266 @@ h3 {
 }
 
 .visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
+
+.container {
+  width: 1160px;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  
+  color: #000;
+}
+
+/* Хэдер */
+.main-header {
+  padding-top: 1px;
+  padding-right: 60px;
+  padding-bottom: 160px;
+  padding-left: 60px;
+  margin-top: 40px;
+  
+  background-color: #f7e296;
+}
+
+.main-header .main-header-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header .logo {
+  width: 164px;
+  
+  margin-top: -32px;
+}
+
+.main-header .search-column {
+  display: flex;
+  flex-direction: column;
+  
+  width: 440px;
+}
+/* Поиск по сайту */
+.search-column .search-input {
+   margin-bottom: 32px;
+}
+
+.search-input .search-button {
+  margin-right: 5px;
+  
+  background: none;
+  border: none;
+}
+
+.search-input .search-button-icon {
+  vertical-align: middle;
+}
+  
+.search-input .search-field {
+  width: 315px;
+  
+  background: none;
+  border: none;
+  
+  opacity: 0.3;
+}
+
+.search-input .search-field:hover,
+.search-input .search-field:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.search-input .search-button-name {
+  display: none;
+  
+  padding: 6px 20px;
+  
+  font-size: 15px;
+  line-height: 36px;
+  
+  background: none;
+  border: none;
+}
+
+/* Каталог товаров */
+.search-column .search-catalog {
+  position: relative;
+}
+
+.search-catalog .search-catalog-btn {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  background: none;
+  border: none;
+  
+  color: #000;
+}
+
+.search-catalog .search-catalog-btn-icon {
+  position: relative;
+  top: 2px;
+  
+  opacity: 0.3;
+}
+
+.search-catalog .search-catalog-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  width: 670px;
+  
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.search-catalog-list .search-list-item {
+  margin-left: 60px;
+}
+
+/* Навигация пользователя */
+.main-header .user-nav-column {
+  display: flex;
+  flex-direction: column;
+  
+  width: 500px;
+}
+
+.main-header .header-user-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-bottom: 40px;
+}
+
+.header-user-block a {
+  text-decoration: none;
+  
+  color: #000;
+}
+
+.header-user-block svg {
+  margin-right: 5px;
+}
+
+.header-user-block .compare {
+  margin-left: 200px;
+}
+
+.main-header .header-nav-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-nav-block a {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  
+  color: #000;
+}
+
+.header-nav-block a:last-of-type {
+  margin-right: -3px;
+}
+
+.header-nav-block .contacts {
+  margin-left: 100px;
+}
+
+/* Главная часть */
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider-img {
+  width: 384px;
+  height: 486px;
+  
+  margin-top: -110px;
+  margin-left: 90px;
+}
+
+.slider-info {
+  margin-top: -123px;
+  margin-right: 60px;
+  
+  
+  width: 500px;
+}
+
+.slider-design {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-design-hr {
+  margin-top: 50px;
+  margin-left: 0;
+  
+  height: 7px;
+  width: 100px;
+  
+  background-color: #fff;
+  border: none;
+}
+
+.slider-design-number {
+  margin-right: -10px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.slider-head {
+  display: block;
+  margin-top: -90px;
+  padding-right: 108px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 61px;
+  font-weight: bold;
+  
+  color: #000;
+}
+
+.slider-text {
+  padding-right: 10px;
+}
+
