@@ -49,11 +49,49 @@ h3 {
 }
 
 .btn {
+  position:relative;
   display: inline-block;
+  
+  width: 220px;
+  height: 40px;
+
+  padding-top: 7px;
+  margin-left: 2px;
+  margin-bottom: 50px;
+  
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: auto;
+  font-weight: bold;
+  
   vertical-align: middle;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   
   color: #000;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top:18px;
+  left:0;
+  z-index: -10;
+  
+  width: 220px;
+  height: 8px;
+  
+  background-color: rgb(240, 197, 46);
+}
+
+.btn:hover {
+  background-color: rgb(240, 197, 46);
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Хэдер */
@@ -229,10 +267,14 @@ h3 {
 }
 
 /* Главная часть */
+
+/* Слайдер */
 .slider {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  margin-bottom: 105px;
 }
 
 .slider-img {
@@ -291,6 +333,67 @@ h3 {
 }
 
 .slider-text {
+  margin-bottom: 45px;
   padding-right: 10px;
 }
 
+.slider-table-info {
+  margin-top: -10px;
+  
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  width: 500px;
+}
+
+.slider-table-info .row-1 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.slider-table-info .row-2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* Список категорий */
+.items-list-block {
+  margin-bottom: 175px;
+}
+
+.items-list-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+}
+
+.items-list-ul li {
+  width: 160px;
+}
+
+.items-list-icon {
+  display: table-cell;
+  
+  width: 160px;
+  height: 160px;
+  
+  text-align: center;
+  vertical-align: middle;
+  
+  
+  background-color: #f7e296;
+}
+
+.items-list-icon svg {
+  vertical-align: middle;
+}
+
+.items-list-name {  
+  text-decoration: none;
+}
