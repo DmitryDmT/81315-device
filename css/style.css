@@ -48,20 +48,26 @@ h3 {
   padding: 0 20px;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .btn {
   position:relative;
   display: inline-block;
   
   width: 220px;
-  height: 40px;
+  
 
-  padding-top: 7px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   margin-left: 2px;
   margin-bottom: 50px;
   
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
-  line-height: auto;
+  line-height: 23px;
   font-weight: bold;
   
   vertical-align: middle;
@@ -71,14 +77,16 @@ h3 {
   letter-spacing: 3px;
   
   color: #000;
+  
+  z-index: 1;
 }
 
 .btn::before {
   content: "";
   position: absolute;
-  top:18px;
-  left:0;
-  z-index: -10;
+  top: 17px;
+  left: 0;
+  z-index: -1;
   
   width: 220px;
   height: 8px;
@@ -86,7 +94,7 @@ h3 {
   background-color: rgb(240, 197, 46);
 }
 
-.btn:hover {
+.btn:hover  {
   background-color: rgb(240, 197, 46);
 }
 
@@ -396,4 +404,308 @@ h3 {
 
 .items-list-name {  
   text-decoration: none;
+}
+
+/* Слайдер с возможностями компании */
+.opportunity-slider {
+  margin-bottom: 94px;
+  
+  min-height: 288px;
+  
+  background-color: #e5e5e5;
+}
+
+.opportunity-slider .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.opportunity-head-column {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  
+  width: 284px;
+}
+
+.opportunity-head-column::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 0;
+  
+  width: 7px;
+  height: 319px;
+  
+  background-color: #000;
+}
+
+.opportunity-head-column .btn {
+  width: 160px;
+  
+  margin-bottom: 20px;
+  
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.opportunity-head-column .btn::before {
+  width: 160px;
+  top: 17px;
+}
+
+.active-for-opportun
+ {
+  padding-top: 9px;
+  padding-right: 115px;
+  padding-bottom: 9px;
+  margin-left: 2px;
+  margin-bottom: 20px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  background-color: #000;
+  color: #f7e184;
+}
+
+.opportunity-info-column {
+  display: flex;
+  flex-direction: row;
+  
+  margin-top: -71px;
+  margin-left: 120px;
+  
+  width: 800px;
+}
+
+.opportunity-info-column h2 {
+  margin-bottom: 25px;
+}
+
+.opportunity-info-column p {
+  padding-right: 150px;
+}
+
+.opportunity-info-img {
+  margin-right: 65px;
+  margin-top: 56px;
+}
+
+.opportunity-info-column .delivery-img {
+  width: 136px;
+  height: 164px;
+}
+
+/* Блок с партнерами компании */
+.friends-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-bottom: 90px;
+}
+
+/* Блок о компании */
+.company-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-bottom: 85px;
+}
+
+.company-decor-hr {
+  margin-left: 0;
+  
+  width: 80px;
+  height: 6px;
+  
+  background-color: #000;
+  
+  border: none;
+}
+
+.about-us-column {
+  display: flex;
+  flex-direction: column;
+  
+  width: 500px;
+}
+
+.about-us-column h2 {
+  margin-bottom: 17px;
+}
+
+.about-us-column p {
+  padding-right: 29px;
+  margin-bottom: 60px;
+}
+
+.about-us-column .trade-companies-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+  
+  list-style: none;
+}
+
+.trade-companies-list li {
+  position: relative;
+  
+  padding-left: 35px;
+}
+
+.trade-companies-list li::before {
+  content: "";
+  position: absolute;;
+  
+  top: 16px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.btn-our-company {
+  width: 260px;
+}
+
+.btn-our-company::before {
+  width: 260px;
+}
+
+.contacts-column {
+  width: 600px;
+}
+
+.contacts-column p {
+  padding-right: 20px;
+  margin-bottom: 36px;
+}
+
+.contacts-column .map {
+  width: 560px;
+  height: 222px;
+  
+  margin-bottom: 71px;
+}
+
+/* Подвал сайта */
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer .user-nav-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-footer .logo {
+  margin-top: 50px;
+  
+  color: #ffc600;
+}
+
+.main-footer .footer-user-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 315px;
+} 
+
+.footer-user-block a {
+  text-decoration: none;
+  
+  color: #fff;
+}
+
+.footer-user-block svg {
+  fill: #ffc600;
+}
+
+.main-footer .device-opportunities-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin-top: -25px;
+  margin-bottom: 50px;
+  
+  color: #fff;
+}
+
+.device-opportunities-line .footer-opportunities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  width: 440px;
+}
+
+.footer-opportunities a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  
+  color: #fff;
+}
+
+.main-footer .social-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin-bottom: 50px;
+}
+
+.main-footer .decoration-hr {
+  margin-left: 0;
+  
+  width: 80px;
+  height: 7px;
+  
+  background-color: #ffc600;
+  border: none;
+}
+
+.main-footer .social-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  width: 160px;
+}
+
+.social-block .social-btn {
+  opacity: 0.3;
 }
