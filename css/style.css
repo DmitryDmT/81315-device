@@ -31,7 +31,7 @@
 }
 
 body {
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 62px;
   font-weight: bold;
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 61px;
   font-weight: bold;
@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -96,7 +96,7 @@ button {
   padding-bottom: 9px;
   margin-left: 2px;
   
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -204,7 +204,7 @@ button {
 .search-form .search-field {
   margin-left: 30px;
   
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 400;
@@ -266,7 +266,7 @@ button {
 }
 
 .search-catalog .search-catalog-btn {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -320,7 +320,7 @@ button {
 }
 
 .search-catalog-lists a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   
@@ -407,7 +407,7 @@ button {
 }
 
 .header-nav-block a {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -502,7 +502,7 @@ button {
   margin-top: -1px;
   margin-right: -10px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179px;
   font-weight: bold;
@@ -513,7 +513,7 @@ button {
   display: block;
   margin-top: -90px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 61px;
   font-weight: bold;
@@ -535,13 +535,13 @@ button {
 }
 
 .slider-table-info .row-1 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 47px;
 }
 
 .slider-table-info .row-2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
@@ -710,7 +710,7 @@ button {
   margin-left: 2px;
   margin-bottom: 20px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -851,7 +851,7 @@ button {
   margin: 0;
   margin-bottom: 60px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: bold;
@@ -987,7 +987,7 @@ button {
 }
 
 .footer-opportunities a {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -1080,7 +1080,7 @@ button {
   margin: 0;
   margin-bottom: 40px;
   
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 36px;
   
@@ -1166,7 +1166,7 @@ button {
   padding-bottom: 13px;
   margin-bottom: 96px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -1189,7 +1189,7 @@ button {
   margin-left: -2px;
   margin-bottom: 20px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -1272,7 +1272,7 @@ button {
   
   width: 50%;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   
    opacity: 0.2;
@@ -1281,7 +1281,7 @@ button {
 .price-controls input {
   width: 60px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   background: none;
   border: none;
@@ -1309,7 +1309,7 @@ button {
   
   font-size: 14px;
   font-weight: normal;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 40px;
   
   cursor: pointer;
@@ -1361,7 +1361,7 @@ button {
   
   font-size: 14px;
   font-weight: normal;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 40px;
   
   cursor: pointer;
@@ -1417,7 +1417,7 @@ button {
   padding-top: 8px;
   padding-bottom: 13px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -1439,7 +1439,7 @@ button {
   
   padding: 0;
   
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1528,7 +1528,7 @@ button {
   top: 22px;
   left: 15px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
@@ -1547,7 +1547,7 @@ button {
 .sorted-item-name {
   width: 260px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px; 
   font-weight: bold;
@@ -1560,7 +1560,7 @@ button {
 .sorted-item-price {
   margin-top: 1px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
 }
@@ -1577,7 +1577,7 @@ button {
 .sorted-item-hover .add-in-compare {
   align-self: center;
   
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   
@@ -1611,7 +1611,7 @@ button {
   
   margin-bottom: 73px;
   
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -1751,7 +1751,7 @@ button {
 }
 
 .message-form label {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
@@ -1773,7 +1773,7 @@ button {
   padding-bottom: 17px;
   padding-left: 20px;
   
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   
