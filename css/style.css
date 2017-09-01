@@ -572,7 +572,7 @@ button {
   
   border: 2px solid #000;
   border-radius: 50%;
-  
+      
   cursor: pointer;
 }
 
@@ -1609,7 +1609,6 @@ button {
   flex-direction: row;
   justify-content: space-between;
   
-  padding: 27px 30px 27px 30px;
   margin-bottom: 73px;
   
   font-family: "Gilroy", sans-serif;
@@ -1628,10 +1627,35 @@ button {
   color: #000;
 }
 
+.paginator .back {
+  padding: 27px 30px 27px 30px;
+}
+
+.paginator .back:hover {
+  background-color: #d9d9d9;
+}
+
+.paginator .back:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.paginator .next {
+  padding: 27px 30px 27px 30px;
+}
+
+.paginator .next:hover {
+  background-color: #d9d9d9;
+}
+
+.paginator .next:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .paginator-count-block {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   
   min-width: 100px;
 }
@@ -1644,4 +1668,131 @@ button {
 
 .paginator-count-block .paginator-count-active {
   opacity: 1;
+}
+
+.paginator-count-block a:not(.paginator-count-active):hover {
+  opacity: 0.6;
+}
+
+.paginator-count-block a:not(.paginator-count-active):active {
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  
+  display: none;
+  
+  width: 960px;
+  
+  background-color: #fff;
+  
+  box-shadow: 0 10px 120px -30px #000;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  
+  width: 55px;
+  height: 55px;
+  
+  font-size: 0;
+  
+  background-color: #f7e296;
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-content-close::before, 
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 13px;
+  
+  width: 30px;
+  height: 2px;
+  
+  background-color: #fff;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.message-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  padding-top: 95px;
+  padding-bottom: 85px;
+  margin: 0 100px;
+}
+
+.message-form .name-block {
+  width: 360px;
+}
+
+.message-form .email-block {
+  width: 360px;
+}
+
+.message-form .text-block {
+  width: 100%;
+}
+
+.message-form label {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  
+  color: #000;
+}
+
+.message-form input {
+  width: 320px;
+  
+  margin-bottom: 20px;
+}
+
+.message-form input,
+.message-form textarea {
+  margin-top: -15px;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  
+  background-color: #f2f2f2;
+  
+  border: none;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  opacity: 1;
+}
+
+.message-form textarea {
+  max-width: 720px;
+  
+  margin-bottom: 20px;
+}
+
+.message-form .btn {
+  margin-left: 0;
 }
