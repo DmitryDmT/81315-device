@@ -95,7 +95,6 @@ button {
   padding-top: 9px;
   padding-bottom: 9px;
   margin-left: 2px;
-  margin-bottom: 50px;
   
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
@@ -111,6 +110,10 @@ button {
   color: #000;
   
   z-index: 1;
+}
+
+.slider-info .btn {
+  margin-bottom: 50px;
 }
 
 .btn::before {
@@ -183,49 +186,75 @@ button {
   
   width: 440px;
 }
+
 /* Поиск по сайту */
-.search-column .search-input {
-   margin-bottom: 32px;
+.search-column .search-form-block {
+  margin-bottom: 26px;
 }
 
-.search-input .search-button {
-  margin-right: 5px;
-  
-  background: none;
-  border: none;
+.search-form-block .search-form {
+  position: relative;
 }
 
-.search-input .search-button-icon {
-  vertical-align: middle;
+.search-form svg {
+  position: absolute;
+  top: 12px;
 }
+
+.search-form .search-field {
+  margin-left: 30px;
   
-.search-input .search-field {
-  width: 315px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 400;
   
   background: none;
   border: none;
   
   opacity: 0.3;
-}
-
-.search-input .search-field:hover,
-.search-input .search-field:focus {
-  opacity: 1;
   outline: none;
 }
 
-.search-input .search-button-name {
-  display: none;
-  
-  padding: 6px 20px;
-  
-  font-size: 15px;
-  line-height: 36px;
-  
-  background: none;
-  border: none;
+.search-form .search-field:hover {
+  opacity: 0.6;
 }
 
+.search-form .search-field:focus {
+  opacity: 1;
+}
+
+.search-form .search-button {
+  display: none;
+  
+  margin-top: -39px;
+  margin-left: 353px;
+  padding: 0;
+  padding-top: 2px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  
+  border: 2px solid #000;
+  border-bottom: none;
+}
+
+.search-form .search-button::before {
+  content: "";
+  position: absolute;
+  
+  top: 37px;
+  left: 0;
+  
+  width: 440px;
+  height: 2px;
+  
+  background-color: #000;
+}
+
+.search-form .search-field:focus ~ .search-button {
+  display: block;
+}
 /* Каталог товаров */
 .search-column .search-catalog {
   position: relative;
@@ -320,9 +349,19 @@ button {
 .main-header .header-user-block {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   
   margin-bottom: 40px;
+}
+
+.main-header .user-opportunities-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  width: 220px;
 }
 
 .header-user-block a {
@@ -343,8 +382,21 @@ button {
   margin-right: 5px;
 }
 
-.header-user-block .out {
-  margin-left: 20px;
+.enter-out-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.enter-out-block .enter{
+  flex-wrap: wrap;
+  
+  width: 160px;
+}
+
+.enter-out-block .out {
+  margin-left: 13px;
+  
+  opacity: 0.3;
 }
 
 .main-header .header-nav-block {
@@ -1046,6 +1098,14 @@ button {
   opacity: 0.3;
 }
 
+.page-breadcrumbs a:hover:not(:last-child) {
+  opacity: 0.6;
+}
+
+.page-breadcrumbs a:active:not(:last-child) {
+  opacity: 0.1;
+}
+
 .page-breadcrumbs svg {
   position: relative;
   top: -1px;
@@ -1148,6 +1208,85 @@ button {
   border-top: 2px solid #000;
 }
 
+.range-filter {
+  margin-bottom: 40px;
+}
+
+.range-controls {
+  position: relative;
+  height: 10px;
+  
+  padding-top: 10px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 65%;
+  height: 2px;
+  
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  
+  cursor: pointer;
+}
+
+.range-controls .toggle:active {
+  top: 0;
+  
+  border: 9px solid #fff;
+}
+
+.range-controls .toggle-min {
+  left: -8px;
+}
+
+.range-controls .toggle-max {
+  left: 115px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  
+  width: 50%;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  
+   opacity: 0.2;
+}
+
+.price-controls input {
+  width: 60px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  background: none;
+  border: none;
+}
+
 .filter-color {
   margin-bottom: 50px;
 }
@@ -1196,6 +1335,14 @@ button {
   background-position: 0 0;
 }
 
+.color-list label:hover::before {
+  opacity: 0.6;
+}
+
+.color-list label:active::before {
+  opacity: 1;
+}
+
 .bluetooth-list {
   display: flex;
   flex-direction: column;
@@ -1238,6 +1385,14 @@ button {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.bluetooth-list label:hover::before {
+  opacity: 0.6;
+}
+
+.bluetooth-list label:active::before {
+  opacity: 1;
 }
 
 .sorted-catalog {
@@ -1304,6 +1459,14 @@ button {
   opacity: 1;
 }
 
+.sort-menu-item:not(.sort-menu-active) a:hover {
+  opacity: 0.6;
+}
+
+.sort-menu-item:not(.sort-menu-active) a:active {
+  opacity: 1;
+}
+
 .sort-menu-order {
   display: flex;
   flex-direction: row;
@@ -1311,6 +1474,18 @@ button {
   justify-content: space-between;
   
   width: 42px;
+}
+
+.sort-menu-order div {
+  cursor: pointer;
+}
+
+.sort-menu-order div:not(.sort-menu-order-act):hover {
+  opacity: 0.4;
+}
+
+.sort-menu-order div:not(.sort-menu-order-act):active {
+  opacity: 1;
 }
 
 .sort-menu-order-act {
@@ -1323,6 +1498,8 @@ button {
 }
 
 .sorted-item {
+  position: relative;
+  
   margin-right: 40px;
   margin-bottom: 45px;
 }
@@ -1331,11 +1508,40 @@ button {
   margin-right: 0;
 }
 
+.sorted-item-new-logo {
+  content: "";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  
+  width: 60px;
+  height: 60px;
+  
+  border: 2px solid #000;
+  border-radius: 50%;
+  
+  opacity: 0.15;
+}
+
+.sorted-item-new-logo span {
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  
+  text-transform: uppercase;
+}
+
 .sorted-item-char {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   
+  margin-top: 20px;
 }
 
 .sorted-item-name {
@@ -1357,6 +1563,45 @@ button {
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
   line-height: 21px;
+}
+
+.sorted-item-hover {
+  position: absolute;
+  top: 171px;
+  left: 70px;
+  
+  display: none;
+  flex-direction: column;
+}
+
+.sorted-item-hover .add-in-compare {
+  align-self: center;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  
+  text-decoration: none;
+  
+  color: #000;
+  
+  opacity: 0.5;
+}
+
+.sorted-item-hover .add-in-compare:hover {
+  opacity: 1;
+}
+
+.sorted-item-hover .add-in-compare:active {
+  opacity: 0.2;
+}
+
+.sorted-item-block:hover .sorted-item-img {
+  opacity: 0.5;
+}
+
+.sorted-item-block:hover .sorted-item-hover {
+  display: flex;
 }
 
 .paginator {
