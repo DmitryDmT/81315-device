@@ -53,7 +53,10 @@
               <h1 class="visually-hidden">Навигация пользователя</h1>
               <a class="enter" href="#">
                 <svg class="enter-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-                Войти
+                Валентин Петухов
+              </a>
+              <a class="out" href="#">
+                Выйти
               </a>
               <a class="compare" href="#">
                 <svg class="compare-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
@@ -85,92 +88,143 @@
             <li><a href="#">Каталог товаров</a>
               <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
             </li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a>Моноподы для селфи</a></li>
           </ul>
         </section>
       </div>
-            
-            <div class="sort-wrapper">
-              <section class="main-sort-menu">
-                <h3>Фильтр:</h3>
-                <h3>Сортировка:</h3>
-                <ul class="sort-menu-list">
-                  <li>По цене</li>
-                  <li>По типу</li>
-                  <li>По популярности</li>
-                </ul>
-                <div class="sort-menu-order">
-                  <div class="sort-menu-order-up">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+      <div class="main-catalog-block">
+        <div class="main-catalog-wrapper container">
+          <section class="filter">
+            <div class="filter-header">
+              <h2>Фильтр:</h2>
+            </div>
+            <form class="main-form" action="#">
+              <fieldset class="filter-range">
+                <legend>Стоимость</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="sort-menu-order-down">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
                   </div>
                 </div>
-              </section>
-            </div>
-            <div class="form-wrapper">
-              <div class="container">
-                <form class="main-sort-form" action="#">
-                  <fieldset>
-                    <legend>Стоимость</legend>
-                    <div class="range-filter">
-                      <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                        </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                      </div>
-                      <div class="price-controls">
-                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <fieldset>
-                    <legend>Цвет</legend>
-                  </fieldset>
-                  <fieldset>
-                    <legend>Bluetooth</legend>
-                  </fieldset>
-                  <button class="btn btn-show-filter" type="button">Показать</button>
-                </form>
-              </div>
-            </div>
-            <section class="main-sort-block">
-              <div class="sorted-catalog">
-                <section class="sorted-item sorted-item1 normal-selfie">
-                  <div class="sorted-item-img sorted-item1-img"><img src="img/item-1.jpg" alt="Любительская селфи-палка"></div>
-                  <a class="sorted-item-name" href="#">Любительская селфи-палка</a>
-                  <span class="sorted-item-price sorted-item1-price">500 руб</span>
-                </section>
-                <section class="sorted-item sorted-item2 profess-selfie">
-                  <div class="sorted-item-img sorted-item2-img"><img src="img/item-2.jpg" alt="Профессиональная селфи-палка"></div>
-                  <a class="sorted-item-name" href="#">Профессиональная селфи-палка</a>
-                  <span class="sorted-item-price sorted-item2-price">1500 руб</span>
-                </section>
-                <section class="sorted-item sorted-item3 unsinkable-selfie">
-                  <div class="sorted-item-img sorted-item3-img"><img src="img/item-3.jpg" alt="Непотопляемая селфи-палка"></div>
-                  <a class="sorted-item-name" href="#">Непотопляемая селфи-палка</a>
-                  <span class="sorted-item-price sorted-item3-price">2500 руб</span>
-                </section>
-                <section class="sorted-item sorted-item4 arm-selfie">
-                  <div class="sorted-item-img sorted-item4-img"><img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»"></div>
-                  <a class="sorted-item-name" href="#">Селфи-палка «Следуй за мной»</a>
-                  <span class="sorted-item-price sorted-item4-price">4900 руб</span>
-                </section>
-                <div class="paginator">
-                  <a class="back" href="#">Назад</a>
-                  <div class="paginator-count-block">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                  </div>
-                  <a class="next" href="#">Вперед</a>
+              </fieldset>
+              <fieldset class="filter-color">
+                <legend>Цвет</legend>
+                <div class="color-list">
+                  <input class="color-checkbox checkbox-black" id="color-black" type="checkbox" name="black" checked>
+                  <label class="color-checkbox" for="color-black">Черный</label>
+                  <input class="color-checkbox checkbox-white" id="color-white" type="checkbox" name="white">
+                  <label class="color-checkbox" for="color-white">Белый</label>
+                  <input class="color-checkbox checkbox-blue" id="color-blue" type="checkbox" name="blue" checked>
+                  <label class="color-checkbox" for="color-blue">Синий</label>
+                  <input class="color-checkbox checkbox-red" id="color-red" type="checkbox" name="red" checked>
+                  <label class="color-checkbox" for="color-red">Красный</label>
+                  <input class="color-checkbox checkbox-pink" id="color-pink" type="checkbox" name="pink">
+                  <label class="color-checkbox" for="color-pink">Розовый</label>
+                </div>
+              </fieldset>
+              <fieldset class="filter-bluetooth">
+                <legend>Bluetooth</legend>
+                <div class="bluetooth-list">
+                  <input class="bluetooth-cond" type="radio" name="bluetooth" id="bluetooth-yes" value="bluetooth-have" checked>
+                  <label for="bluetooth-yes">Есть</label>
+                  <input class="bluetooth-cond" type="radio" name="bluetooth" id="bluetooth-not" value="bluetooth-dont-have"> 
+                  <label for="bluetooth-not">Нет</label>
+                </div>
+              </fieldset>
+              <button class="btn btn-show-filter" type="button">Показать</button>
+            </form>
+          </section>
+          <section class="sorted-catalog">       
+            <section class="main-sort-menu">
+              <h3>Сортировка:</h3>
+              <ul class="sort-menu-list">
+                <li class="sort-menu-item sort-menu-active"><a href="#">По цене</a></li>
+                <li class="sort-menu-item"><a href="#">По типу</a></li>
+                <li class="sort-menu-item"><a href="#">По популярности</a></li>
+              </ul>
+              <div class="sort-menu-order">
+                <div class="sort-menu-order-up sort-menu-order-act">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </div>
+                <div class="sort-menu-order-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                 </div>
               </div>
             </section>
+            <section class="sorted-catalog-list">
+              <section class="sorted-item sorted-item1 normal-selfie">
+                <div class="sorted-item-img sorted-item1-img">
+                  <img src="img/item-1.jpg" alt="Любительская селфи-палка">
+                </div>
+                <div class="sorted-item-char">
+                  <a class="sorted-item-name" href="#">
+                    Любительская селфи-палка
+                  </a>
+                  <span class="sorted-item-price sorted-item1-price">
+                    500 руб
+                  </span>
+                </div>
+              </section>
+              <section class="sorted-item sorted-item2 profess-selfie">
+                <div class="sorted-item-img sorted-item2-img">
+                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
+                </div>
+                <div class="sorted-item-char">
+                  <a class="sorted-item-name" href="#">
+                    Профессиональная селфи-палка
+                  </a>
+                  <span class="sorted-item-price sorted-item2-price">
+                    1500 руб
+                  </span>
+                </div>
+              </section>
+              <section class="sorted-item sorted-item3 unsinkable-selfie">
+                <div class="sorted-item-img sorted-item3-img">
+                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
+                </div>
+                <div class="sorted-item-char">
+                  <a class="sorted-item-name" href="#">
+                    Непотопляемая селфи-палка
+                  </a>
+                  <span class="sorted-item-price sorted-item3-price">
+                    2500 руб
+                  </span>
+                </div>
+              </section>
+              <section class="sorted-item sorted-item4 arm-selfie">
+                <div class="sorted-item-img sorted-item4-img">
+                  <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
+                </div>
+                <div class="sorted-item-char">
+                  <a class="sorted-item-name" href="#">
+                    Селфи-палка «Следуй за мной»
+                  </a>
+                  <span class="sorted-item-price sorted-item4-price">
+                    4900 руб
+                  </span>
+                </div>
+              </section>
+            </section>
+            <div class="paginator">
+              <a class="back" href="#">Назад</a>
+              <div class="paginator-count-block">
+                <a class="paginator-count-active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+              </div>
+              <a class="next" href="#">Вперед</a>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">

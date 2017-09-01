@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
 body {
   font-family: "OpenSans", sans-serif;
   font-size: 15px;
@@ -288,7 +320,6 @@ button {
 .main-header .header-user-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   
   margin-bottom: 40px;
@@ -312,8 +343,8 @@ button {
   margin-right: 5px;
 }
 
-.header-user-block .compare {
-  margin-left: 200px;
+.header-user-block .out {
+  margin-left: 20px;
 }
 
 .main-header .header-nav-block {
@@ -995,6 +1026,7 @@ button {
   
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -1022,17 +1054,349 @@ button {
 }
 
 /* Основная часть страницы */
+.main-catalog-block {
+  position: relative;
+}
 
+.main-catalog-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  
+  background-image: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px);
+  background-repeat: no-repeat;
+}
+
+.main-catalog-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  
+  background-image: linear-gradient(to bottom, #eeeeee 70px, #ffffff 70px);
+  background-repeat: no-repeat;
+}
+
+.main-catalog-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  
+  z-index: 1;
+}
 
 /* Форма сортировки */
-.sort-wrapper {
+.filter {
+  width: 200px;
+  
+  padding-left: 60px;
+  padding-right: 70px;
+  
+  background-image: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px);
+}
+
+.filter-header h2 {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin-bottom: 96px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.main-form fieldset {
+  padding: 0;
+  
+  border: none;
+}
+
+.main-form fieldset:last-of-type {
+  margin-bottom: 40px;
+}
+
+.main-form legend {
+  position: relative;
+  margin-left: -2px;
+  margin-bottom: 20px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+  
+  color: #000;
+}
+
+.main-form legend::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  
+  width: 200px;
+  
+  border-top: 2px solid #000;
+}
+
+.filter-color {
+  margin-bottom: 50px;
+}
+
+.color-list {
   display: flex;
-  padding-bottom: 5px;
-  background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 470px, #ebebeb 470px, #ebebeb);
-  margin: 0 auto;
+  flex-direction: column;
+}
+
+.color-list input[type="checkbox"] {
+  display: none;
+}
+
+.color-list label {
+  position: relative;
+  
+  display: block;
+  
+  padding-left: 36px;
+  
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  line-height: 40px;
+  
+  cursor: pointer;
+}
+
+.color-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -3px;
+  
+  width: 26px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.color-checkbox:checked + label::before{
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bluetooth-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bluetooth-list input[type="radio"] {
+  display: none;
+}
+
+.bluetooth-list label {
+  position: relative;
+  
+  display: block;
+  
+  padding-left: 36px;
+  
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  line-height: 40px;
+  
+  cursor: pointer;
+}
+
+.bluetooth-cond + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -3px;
+  
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bluetooth-cond:checked + label::before{
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.sorted-catalog {
+  width: 760px;
+  
+  padding-left: 70px;
+  
+  background-image: linear-gradient(to bottom, #eeeeee 70px, #ffffff 70px);
 }
 
 .main-sort-menu {
   display: flex;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  height: 68px;
+  
+  margin-bottom: 70px;
+}
+
+.main-sort-menu h3 {
+  padding-top: 8px;
+  padding-bottom: 13px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.sort-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  min-width: 300px;
+  
+  margin: 0;
+  margin-top: 25px;
+  margin-left: -200px;
+  
+  padding: 0;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  
+  list-style: none;
+}
+
+.sort-menu-item a {
+  text-decoration: none;
+  
+  color: #000;
+  
+  opacity: 0.3;
+}
+
+.sort-menu-active a {
+  opacity: 1;
+}
+
+.sort-menu-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 42px;
+}
+
+.sort-menu-order-act {
+  opacity: 0.2;
+}
+
+.sorted-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorted-item {
+  margin-right: 40px;
+  margin-bottom: 45px;
+}
+
+.sorted-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.sorted-item-char {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.sorted-item-name {
+  width: 260px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 23px; 
+  font-weight: bold;
+  
+  text-decoration: none;
+  
+  color: #000;
+}
+
+.sorted-item-price {
+  margin-top: 1px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.paginator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  padding: 27px 30px 27px 30px;
+  margin-bottom: 73px;
+  
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  
+  background-color: #ebebeb;
+}
+
+.paginator a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+  color: #000;
+}
+
+.paginator-count-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  min-width: 100px;
+}
+
+.paginator-count-block a {
+  letter-spacing: 0;
+  
+  opacity: 0.3;
+}
+
+.paginator-count-block .paginator-count-active {
+  opacity: 1;
 }
