@@ -94,7 +94,6 @@ button {
 
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-left: 2px;
   
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -113,7 +112,7 @@ button {
 }
 
 .slider-info .btn {
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 
 .btn::before {
@@ -157,12 +156,15 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  margin-top: -19px;
 }
 
 .main-header .logo {
   width: 164px;
   
   margin-top: -32px;
+  margin-left: -2px;
 }
 
 .main-header .logo-link {
@@ -189,7 +191,7 @@ button {
 
 /* Поиск по сайту */
 .search-column .search-form-block {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .search-form-block .search-form {
@@ -198,11 +200,13 @@ button {
 
 .search-form svg {
   position: absolute;
-  top: 12px;
+  top: 7px;
+  left: 2px;
 }
 
 .search-form .search-field {
-  margin-left: 30px;
+  margin-top: -10px;
+  margin-left: 37px;
   
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -259,19 +263,22 @@ button {
 .search-column .search-catalog {
   position: relative;
   
+  width: 250px;
+  
   margin-top: 8px;
-  width: 235px;
   
   line-height: 10px;
 }
 
 .search-catalog .search-catalog-btn {
+  padding-right: 20px;
+  
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-decoration: none;
   
   color: #000;
@@ -290,8 +297,9 @@ button {
 }
 
 .search-catalog .search-catalog-btn-icon {
-  position: relative;
-  top: 2px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
   
   opacity: 0.3;
 }
@@ -364,6 +372,10 @@ button {
   width: 220px;
 }
 
+.user-opportunities-block .compare {
+  margin-left: 10px;
+}
+
 .header-user-block a {
   text-decoration: none;
   
@@ -379,7 +391,8 @@ button {
 }
 
 .header-user-block svg {
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: -5px;
 }
 
 .enter-out-block {
@@ -391,6 +404,8 @@ button {
   flex-wrap: wrap;
   
   width: 160px;
+  
+  padding-left: 5px;
 }
 
 .enter-out-block .out {
@@ -412,7 +427,7 @@ button {
   line-height: 23px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-decoration: none;
   
   color: #000;
@@ -431,7 +446,7 @@ button {
 }
 
 .header-nav-block .guarantee {
-  margin-right: 100px;
+  margin-right: 70px;
 }
 
 /* Главная часть */
@@ -482,6 +497,12 @@ button {
   width: 500px;
 }
 
+.slider-info .btn {
+  margin-top: -3px;
+  
+  letter-spacing: 3.5px;
+}
+
 .slider-design {
   display: flex;
   flex-direction: row;
@@ -511,26 +532,36 @@ button {
 
 .slider-head {
   display: block;
-  margin-top: -90px;
+  margin-top: -87px;
   
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  line-height: 61px;
+  line-height: 58px;
   font-weight: bold;
+  letter-spacing: 0.6px;
   
   color: #000;
 }
 
 .slider-text {
+  margin-top: 18px;
   margin-bottom: 45px;
   padding-right: 10px;
 }
 
+.slide:nth-child(2) .slider-text {
+  padding-right: 60px;
+}
+
+.slide:nth-child(3) .slider-text {
+  padding-right: 60px;
+}
+
 .slider-table-info {
-  margin-top: -10px;
+  margin-top: -4px;
   
-  border-collapse: separate;
-  border-spacing: 0 6px;
+  border-collapse: collapse;
+  
   width: 500px;
 }
 
@@ -538,6 +569,10 @@ button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   line-height: 47px;
+}
+
+.slider-table-info .row-1 td {
+  padding-bottom: 7px;
 }
 
 .slider-table-info .row-2 {
@@ -556,7 +591,7 @@ button {
 
 .slider-controls {
   position: absolute;
-  top: 222px;
+  top: 219px;
   right: 83px;
   
   display: flex;
@@ -599,7 +634,7 @@ button {
 
 /* Список категорий */
 .items-list-block {
-  margin-bottom: 175px;
+  margin-bottom: 165px;
 }
 
 .items-list-ul {
@@ -631,10 +666,22 @@ button {
   background-color: #f7e296;
 }
 
+.items-list-ul li:nth-child(2) .items-list-icon {
+  vertical-align: bottom;
+}
+
 .items-list-name {
   display: block;
   
   text-decoration: none;
+}
+
+.items-list-ul li:nth-child(2) h3 {
+  padding-right: 50px;
+}
+
+.items-list-name h3 {
+  margin-top: 35px;
 }
 
 .items-list-name:hover .items-list-icon {
@@ -672,6 +719,9 @@ button {
   flex-direction: column;
   
   width: 284px;
+  
+  padding-right: 5px;
+  margin-top: -20px;
 }
 
 .opportunity-head-column::before {
@@ -681,7 +731,7 @@ button {
   right: 0;
   
   width: 7px;
-  height: 319px;
+  min-height: 319px;
   
   background-color: #000;
 }
@@ -693,6 +743,7 @@ button {
   
   font-size: 18px;
   line-height: 23px;
+  letter-spacing: 2px;
   
   outline: none;
 }
@@ -701,13 +752,17 @@ button {
   width: 160px;
 }
 
+.opportunity-head-column .btn-guarantee {
+  margin-top: 3px;
+}
+
+/*
 .active-for-opportun
  {
   padding-top: 9px;
   padding-right: 100px;
   padding-bottom: 9px;
   padding-left: 21px;
-  margin-left: 2px;
   margin-bottom: 20px;
   
   font-family: "Gilroy", "Arial", sans-serif;
@@ -724,13 +779,14 @@ button {
   background-color: #000;
   color: #f7e184;
 }
+*/
 
 .opportunity-info-column {
   display: flex;
   flex-direction: row;
   
   margin-top: -71px;
-  margin-left: 120px;
+  margin-left: 116px;
   
   width: 800px;
 }
@@ -740,11 +796,12 @@ button {
 }
 
 .opportunity-info-column p {
-  padding-right: 150px;
+  padding-right: 110px;
+  letter-spacing: 0.35px;
 }
 
 .opportunity-info-img {
-  margin-right: 65px;
+  margin-right: 106px;
   margin-top: 56px;
 }
 
@@ -776,11 +833,9 @@ button {
 #delive:checked ~ .opportunity-head-column label[for="delive"],
 #warran:checked ~ .opportunity-head-column label[for="warran"],
 #cred:checked ~ .opportunity-head-column label[for="cred"] {
-  padding-top: 9px;
-  padding-right: 100px;
-  padding-bottom: 9px;
-  margin-left: 2px;
-  margin-bottom: 20px;
+  
+  padding-right: 120px;
+  
   
   background-color: #000;
   color: #f7e184;
@@ -799,7 +854,7 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   
-  margin-bottom: 90px;
+  margin-bottom: 75px;
 }
 
 .friends-block a {
@@ -816,7 +871,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .company-decor-hr {
@@ -838,18 +893,29 @@ button {
 }
 
 .about-us-column h2 {
-  margin-bottom: 17px;
+  margin-top: 34px;
+  margin-bottom: 20px;
 }
 
 .about-us-column p {
-  padding-right: 29px;
-  margin-bottom: 60px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  
+  letter-spacing: 0.25px;
+}
+
+.about-us-column p:first-of-type {
+  padding-right: 35px;
+}
+
+.about-us-column p:last-of-type {
+  margin-bottom: 65px;
 }
 
 .about-us-column .trade-companies-list {
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -888,7 +954,7 @@ button {
 }
 
 .contacts-column {
-  width: 600px;
+  width: 560px;
 }
 
 .contacts-column p {
@@ -921,7 +987,7 @@ button {
 }
 
 .main-footer .logo {
-  margin-top: 50px;
+  margin-top: 53px;
   
   color: #ffc600;
 }
@@ -939,11 +1005,14 @@ button {
   flex-wrap: wrap;
   align-items: center;
   
-  width: 315px;
+  width: 320px;
 } 
 
 .footer-user-block a {
+  margin-top: 10px;
+  
   text-decoration: none;
+  letter-spacing: 0.35px;
   
   color: rgba(255, 255, 255, 0.7);
 }
@@ -957,6 +1026,9 @@ button {
 }
 
 .footer-user-block svg {
+  margin-right: 10px;
+  margin-left: -5px;
+  
   fill: #ffc600;
 }
 
@@ -971,8 +1043,8 @@ button {
   justify-content: space-between;
   align-items: center;
   
-  margin-top: -25px;
-  margin-bottom: 50px;
+  margin-top: -30px;
+  margin-bottom: 45px;
   
   color: #fff;
 }
@@ -983,7 +1055,10 @@ button {
   justify-content: space-around;
   flex-wrap: wrap;
   
-  width: 440px;
+  width: 470px;
+  
+  margin-top: 4px;
+  margin-left: -30px;
 }
 
 .footer-opportunities a {
@@ -1014,6 +1089,7 @@ button {
 }
 
 .main-footer .decoration-hr {
+  margin-top: 15px;
   margin-left: 0;
   
   width: 80px;
@@ -1029,7 +1105,10 @@ button {
   justify-content: space-around;
   flex-wrap: wrap;
   
-  width: 160px;
+  width: 170px;
+  
+  margin-top: 2px;
+  margin-left: -55px;
 }
 
 .social-block .social-btn {
