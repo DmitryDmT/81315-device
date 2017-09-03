@@ -894,15 +894,9 @@ body {
   margin-bottom: 80px;
 }
 
-.company-decor-hr {
-  margin-left: 0;
-  
-  width: 80px;
-  height: 6px;
-  
-  background-color: #000;
-  
-  border: none;
+.company-block h2 {
+  margin-top: 34px;
+  margin-bottom: 20px;
 }
 
 .about-us-column {
@@ -912,9 +906,15 @@ body {
   width: 500px;
 }
 
-.about-us-column h2 {
-  margin-top: 34px;
-  margin-bottom: 20px;
+.company-decor-hr {
+  margin-left: 0;
+  
+  width: 80px;
+  height: 6px;
+  
+  background-color: #000;
+  
+  border: none;
 }
 
 .about-us-column p {
@@ -974,6 +974,9 @@ body {
 }
 
 .contacts-column {
+  display: flex;
+  flex-direction: column;
+  
   width: 560px;
 }
 
@@ -1527,14 +1530,20 @@ body {
   flex-direction: row;
   justify-content: space-between;
   
-  height: 68px;
   
+  width: 832px;
+  
+  padding-top: 7px;
+  padding-bottom: 10px;
   margin-bottom: 70px;
+  margin-left: -70px;
+  
+  background-color: #eeeeee;
 }
 
 .main-sort-menu h3 {
-  padding-top: 8px;
-  padding-bottom: 13px;
+  margin-left: 70px;
+  margin-right: -173px;
   
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -1550,12 +1559,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   
-  min-width: 300px;
+  width: 300px;
   
   margin: 0;
-  margin-top: 25px;
-  margin-left: -170px;
-  
+  margin-top: 16px;
   padding: 0;
   
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1565,6 +1572,10 @@ body {
   letter-spacing: 0.5px;
   
   list-style: none;
+}
+
+.sort-menu-item {
+  margin-right: 7px;
 }
 
 .sort-menu-item a {
