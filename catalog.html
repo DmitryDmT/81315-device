@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <title>Каталог «Device»</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
-     <header class="main-header main-header-other-page">
-        <h1 class="logo"><a class="logo-link" href="index.html">DEVICE</a></h1>
-        <section class="main-header-info">
+      <header class="main-header main-header-other-page">
+        <h1 class="h1-style logo"><a class="logo-link" href="index.html">DEVICE</a></h1>
+        <section class="main-header-info"> <!-- Я решил разделить лого и блок с колонками отдельно, чтобы легче было флекс использовать. А что лучше будет использовать, если обойтись без этого section? -->
           <section class="search-column">
             <div class="search-form-block">
-              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <h2 class="h2-style visually-hidden">Поиск по сайту</h2>
               <form class="search-form" action="#" method="get">
                 <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
                 </svg>
                 <input class="search-field" type="text" name="search" placeholder="Поиск по сайту">
-                <button class="search-button" type="button">Найти</button>
+                <button class="button-style search-button" type="button">Найти</button>
               </form>
             </div>
             <div class="search-catalog">
-              <h2 class="visually-hidden">Каталог товаров</h2>
+              <h2 class="h2-style visually-hidden">Каталог товаров</h2>
               <a class="search-catalog-btn" href="#">
                 <span>Каталог товаров</span>
                 <svg class="search-catalog-btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
@@ -51,7 +51,7 @@
           </section>
           <section class="user-nav-column">
             <div class="header-user-block">
-              <h2 class="visually-hidden">Навигация пользователя</h2>
+              <h2 class="h2-style visually-hidden">Навигация пользователя</h2>
               <div class="enter-out-block">
                 <a class="enter" href="#">
                   <svg class="enter-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
@@ -73,7 +73,7 @@
               </div>
             </div>
             <nav class="header-nav-block">
-              <h1 class="visually-hidden">Возможности компании</h1>
+              <h2 class="visually-hidden">Возможности компании</h2>
               <a class="deliver" href="#">Доставка</a>
               <a class="guarantee" href="#">Гарантия</a>
               <a class="contacts" href="#">Контакты</a>
@@ -85,7 +85,7 @@
     <main>
       <div class="container">
         <section class="page-name-block">
-          <h2 class="page-name">Моноподы для селфи</h2>
+          <h2 class="h2-style page-name">Моноподы для селфи</h2>
           <ul class="page-breadcrumbs">
             <li><a href="index.html">Главная</a>
               <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
@@ -101,7 +101,7 @@
         <div class="main-catalog-wrapper container">
           <section class="filter">
             <div class="filter-header">
-              <h2>Фильтр:</h2>
+              <h2 class="h2-style">Фильтр:</h2>
             </div>
             <form class="main-form" action="#" method="get">
               <fieldset class="filter-range">
@@ -144,12 +144,12 @@
                   <label for="bluetooth-not">Нет</label>
                 </div>
               </fieldset>
-              <button class="btn btn-show-filter" type="submit">Показать</button>
+              <button class="button-style btn btn-show-filter" type="submit">Показать</button>
             </form>
           </section>
           <section class="sorted-catalog">       
             <section class="main-sort-menu">
-              <h3>Сортировка:</h3>
+              <h3 class="h3-style">Сортировка:</h3>
               <ul class="sort-menu-list">
                 <li class="sort-menu-item sort-menu-active"><a href="#">По цене</a></li>
                 <li class="sort-menu-item"><a href="#">По типу</a></li>
@@ -277,9 +277,9 @@
     <footer class="main-footer">
       <div class="container">
         <section class="user-nav-line">
-          <h1 class="logo"><a class="logo-link" href="#">DEVICE</a></h1>
+          <h1 class="h1-style logo"><a class="logo-link" href="index.html">DEVICE</a></h1>
           <div class="footer-user-block">
-            <h2 class="visually-hidden">Навигация пользователя</h2>
+            <h2 class="h2-style visually-hidden">Навигация пользователя</h2>
             <a class="enter" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
               Войти
@@ -297,7 +297,7 @@
         <section class="device-opportunities-line">
           <p class="address-1">г. Москва, ул. Строителей, 15</p>
           <nav class="footer-opportunities">
-            <h1 class="visually-hidden">Возможности компании</h1>
+            <h2 class="visually-hidden">Возможности компании</h2>
             <a class="delivery" href="#">Доставка</a>
             <a class="guarantee" href="#">Гарантия</a>
             <a class="contacts" href="#">Контакты</a>
@@ -309,7 +309,7 @@
             <hr class="decoration-hr">
           </div>
           <section class="social-block">
-            <h2 class="visually-hidden">Социальная связь</h2>
+            <h2 class="h2-style visually-hidden">Социальная связь</h2>
             <a class="social-btn social-f" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/></svg>
             </a>
