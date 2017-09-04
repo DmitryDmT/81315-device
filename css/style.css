@@ -1960,6 +1960,10 @@ body {
   opacity: 1;
 }
 
+.message-form input:invalid {
+  background-color: #f6dada;
+}
+
 .message-form textarea {
   max-width: 720px;
   
@@ -1983,9 +1987,28 @@ body {
   z-index: 100;
 }
 
+.modal-map iframe {
+  position: relative;
+  
+  border: none;
+  
+  z-index: 101;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  margin: 0;
+}
+
 .modal-map .modal-content-close {
   top: 43px;
   right: 38px;
+  
+  z-index: 102;
 }
 
 .modal-content-show {
