@@ -31,6 +31,8 @@
 }
 
 body {
+  position: relative;
+  
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -1150,6 +1152,7 @@ body {
 
 .html-academy .social-html {
   display: block;
+  font-size: 0;
 }
 
 .html-academy .social-html:hover {
@@ -1605,6 +1608,8 @@ body {
   justify-content: space-between;
   
   width: 42px;
+  
+  font-size: 0;
 }
 
 .sort-menu-order div {
@@ -1820,16 +1825,23 @@ body {
   opacity: 1;
 }
 
+/* Форма обратной связи */
 .modal-content {
-  position: relative;
+  position: fixed;
+  top: 120px;
+  left: 50%;
   
   display: none;
   
   width: 960px;
   
+  margin-left: -475px;
+  
   background-color: #fff;
   
   box-shadow: 0 10px 120px -30px #000;
+  
+  z-index: 100;
 }
 
 .modal-content-close {
@@ -1842,9 +1854,11 @@ body {
   
   font-size: 0;
   
-  background-color: #f7e296;
+  background-color: #f0c52e;
   
   border-radius: 50%;
+  
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -1867,6 +1881,14 @@ body {
 
 .modal-content-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-content-close:hover {
+  opacity: 1;
+}
+
+.modal-content-close:active {
+  opacity: 0.3;
 }
 
 .message-form {
@@ -1924,8 +1946,17 @@ body {
   border: none;
 }
 
+.message-form input:hover,
+.message-form textarea:hover {
+  background-color: #eaeaea;
+}
+
 .message-form input:focus,
 .message-form textarea:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #f7e296;
+  outline: none;
+  
   opacity: 1;
 }
 
@@ -1937,4 +1968,86 @@ body {
 
 .message-form .btn {
   margin-left: 0;
+}
+
+.modal-map {
+  position: fixed;
+  
+  top: 120px;
+  left: 50%;
+  
+  display: none;
+  
+  margin-left: -485px;
+  
+  z-index: 100;
+}
+
+.modal-map .modal-content-close {
+  top: 43px;
+  right: 38px;
+}
+
+.modal-content-show {
+  display: block;
+  animation-name: bounce-block;
+  animation-duration: 0.5s;
+}
+
+.modal-map-show {
+  display: block;
+  animation-name: bounce-block;
+  animation-duration: 0.5s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  
+  display: none;
+  
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  
+  opacity: 0.3;
+  
+  z-index: 50;
+  
+  cursor: pointer;
+}
+
+.modal-overlay-show {
+  display: block;
+}
+
+.modal-error {
+  animation-name: shake-block;
+  animation-duration: 0.5s;
+}
+
+@keyframes bounce-block {
+  0% {
+    transform: translateY(-1060px);
+  }
+  
+  70% {
+    transform: translateY(30px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake-block {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
